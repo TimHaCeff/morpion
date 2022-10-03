@@ -29,9 +29,9 @@ $(function (){
         $(this).mouseleave(function(){  //si souris n'est pas hover
             $(this).css({"background-color":"transparent", "opacity":"1"})
         })
-        if(win == true && $(this).attr("class") != "symbole_0" && $(this).attr("class") != "symbole_1") //si la classe n'est pas X 0
+        if(win == true && $(this).attr("class") == "bases") //si la classe n'est pas X 0
         {
-            $(this).css({"background-image":"url(\"no.png\")", "opacity":"100%"});
+            $(this).css({"background-image":"url(\"./no.png\")", "opacity":"100%"});
             
             $(this).mouseleave(function(){
                $(this).css({"background-image":"none"})  
@@ -45,7 +45,7 @@ $(function (){
     $("td").click(function(){
         if (win == false)//if win
         {
-            if($(this).attr("class") == "bases")
+            if($(this).attr("class") == "bases")    //si class de td est egal a base
             {
                 i++;    //Commence a 1 donc cercle
                 if(i % 2 == 0)
