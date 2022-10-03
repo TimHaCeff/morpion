@@ -1,0 +1,16 @@
+﻿td {
+	width: 100px;
+	height: 80px;
+	text-align: center;
+}
+
+.bases{
+    
+}
+.symbole_0{
+	background-image:url("0.png");
+}
+
+.symbole_1{
+	background-image:url("1.png");
+}
